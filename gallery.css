@@ -1,0 +1,80 @@
+.heading{
+    font-size:20px;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+    
+    filter:drop-shadow(2px 2px 2px white);
+
+}
+
+.edit1 h3{
+    margin:10px;
+    padding: 5px;
+    color:gold;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px white;
+    animation: zoom 1s linear;
+    animation-timeline: view();
+
+}
+@keyframes zoom{
+    from{
+        scale: 0.5;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+.edit1 div{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px 30px;
+    padding: 10px 10px;
+}
+
+.edit1 div img,.edit1 div video{
+    width:30%;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    
+}
+video{
+    height:450;
+}
+
+@keyframes scroll{
+    from{
+        opacity:0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+
+.edit2 img{
+    width:2px;
+}
+
+@media(max-width:900px){
+
+    .edit1 h3{
+        font-size: 15px;
+    }
+
+    video{
+        height: 150;
+    }
+}
